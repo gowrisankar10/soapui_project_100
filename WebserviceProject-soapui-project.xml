@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="704bc3e8-1116-4b96-b54b-958d31a30a39" activeEnvironment="Default" name="WebserviceProject" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a2892a85-1e56-46be-8970-c6cc52431206" wsaVersion="NONE" name="ServiceSoap" type="wsdl" bindingName="{http://tempuri.org/}ServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://revanthwebservice.somee.com/Service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint></con:endpoints><con:operation id="feb6ba74-901c-4594-8d66-06fc0f6bc3b9" isOneWay="false" action="http://tempuri.org/GetArray" name="GetArray" bindingOperationName="GetArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="266f7b47-9ef3-496f-b7e5-4e6f664604ae" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetArray/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetArray"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="101b7b9f-ff3b-42c4-bc2e-6d9ec2b2f1b3" isOneWay="false" action="http://tempuri.org/GetCurrentTime" name="GetCurrentTime" bindingOperationName="GetCurrentTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="01bd0ce4-a92c-4b4c-a369-2aa21cfdc248" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetCurrentTime/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetCurrentTime"/></con:call></con:operation><con:operation id="b82e455c-562d-4e96-a973-b306bcdab699" isOneWay="false" action="http://tempuri.org/GetXmlData" name="GetXmlData" bindingOperationName="GetXmlData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="98765e33-ed6d-464a-8b92-3aa3234b5f62" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetXmlData/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetXmlData"/></con:call></con:operation><con:operation id="bc08d2e2-951c-43dc-a72d-dada256d6126" isOneWay="false" action="http://tempuri.org/Hello" name="Hello" bindingOperationName="Hello" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9b192d43-8cf1-4e9a-a95a-700715394539" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Hello>\r
+         <!--Optional:-->\r
+         <tem:name>?</tem:name>\r
+      </tem:Hello>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Hello"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="70afcb68-fe58-4560-9dfe-988771f4d876" wsaVersion="NONE" name="ServiceSoap12" type="wsdl" bindingName="{http://tempuri.org/}ServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://revanthwebservice.somee.com/Service.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://revanthwebservice.somee.com/Service.asmx?WSDL"><con:part><con:url>http://revanthwebservice.somee.com/Service.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://tempuri.org/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Hello">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArray">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetArrayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArrayResult" type="tns:ArrayOfInt"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCurrentTime">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetCurrentTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCurrentTimeResult" type="s:dateTime"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetXmlData">
+        <s:complexType/>
+      </s:element>
+      <s:element name="GetXmlDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetXmlDataResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any/>
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloSoapIn">
+    <wsdl:part name="parameters" element="tns:Hello"/>
+  </wsdl:message>
+  <wsdl:message name="HelloSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetArraySoapIn">
+    <wsdl:part name="parameters" element="tns:GetArray"/>
+  </wsdl:message>
+  <wsdl:message name="GetArraySoapOut">
+    <wsdl:part name="parameters" element="tns:GetArrayResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCurrentTime"/>
+  </wsdl:message>
+  <wsdl:message name="GetCurrentTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCurrentTimeResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetXmlDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetXmlData"/>
+  </wsdl:message>
+  <wsdl:message name="GetXmlDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetXmlDataResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Hello">
+      <wsdl:input message="tns:HelloSoapIn"/>
+      <wsdl:output message="tns:HelloSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <wsdl:input message="tns:GetArraySoapIn"/>
+      <wsdl:output message="tns:GetArraySoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTime">
+      <wsdl:input message="tns:GetCurrentTimeSoapIn"/>
+      <wsdl:output message="tns:GetCurrentTimeSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlData">
+      <wsdl:input message="tns:GetXmlDataSoapIn"/>
+      <wsdl:output message="tns:GetXmlDataSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Hello">
+      <soap:operation soapAction="http://tempuri.org/Hello" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <soap:operation soapAction="http://tempuri.org/GetArray" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTime">
+      <soap:operation soapAction="http://tempuri.org/GetCurrentTime" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlData">
+      <soap:operation soapAction="http://tempuri.org/GetXmlData" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="Hello">
+      <soap12:operation soapAction="http://tempuri.org/Hello" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArray">
+      <soap12:operation soapAction="http://tempuri.org/GetArray" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentTime">
+      <soap12:operation soapAction="http://tempuri.org/GetCurrentTime" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetXmlData">
+      <soap12:operation soapAction="http://tempuri.org/GetXmlData" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://revanthwebservice.somee.com/Service.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://revanthwebservice.somee.com/Service.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint></con:endpoints><con:operation id="da66a596-463a-4536-856c-af75f24fd92c" isOneWay="false" action="http://tempuri.org/GetArray" name="GetArray" bindingOperationName="GetArray" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0eb8b319-c534-43b7-be79-7a7567e4390a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetArray/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/GetArrayRequest"/></con:call></con:operation><con:operation id="0d5755fe-e94e-4dd6-be9e-60c308511f4b" isOneWay="false" action="http://tempuri.org/GetCurrentTime" name="GetCurrentTime" bindingOperationName="GetCurrentTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6389ac4a-662f-44f1-8f48-4eb04a710539" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetCurrentTime/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/GetCurrentTimeRequest"/></con:call></con:operation><con:operation id="21589c63-6fed-4efe-a539-cf2dc67065cd" isOneWay="false" action="http://tempuri.org/GetXmlData" name="GetXmlData" bindingOperationName="GetXmlData" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c9504e60-0714-40f2-9c0a-a93caac8af70" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:GetXmlData/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/GetXmlDataRequest"/></con:call></con:operation><con:operation id="10c48a1b-7736-4973-83b9-a25b12f56a4b" isOneWay="false" action="http://tempuri.org/Hello" name="Hello" bindingOperationName="Hello" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e67cb0e3-5d49-43bd-bf9d-dfd724fa9e93" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <tem:Hello>\r
+         <!--Optional:-->\r
+         <tem:name>?</tem:name>\r
+      </tem:Hello>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/ServiceSoap/HelloRequest"/></con:call></con:operation></con:interface><con:testSuite id="8bd75874-5278-423c-acf9-7e4ef0ce894e" name="WebserviceTestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="f38e22a0-821e-4adf-b665-955cda8343a8" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" id="74314c7f-ccc6-42ca-8568-a4d5cba0bbfa" name="GetArray - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ServiceSoap</con:interface><con:operation>GetArray</con:operation><con:request name="GetArray - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="2b72ee40-28db-4dab-9720-b764270c0d7f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:GetArray/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="a85afd0c-db70-4024-8247-8e4f20bfb6b4" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/GetArray"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="f981d367-d803-4102-91bc-355f82b39baf" name="Hello - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ServiceSoap</con:interface><con:operation>Hello</con:operation><con:request name="Hello - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="5ed405a9-4ffa-4d78-8b83-02d07c119720"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://revanthwebservice.somee.com/Service.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:Hello>\r
+         <!--Optional:-->\r
+         <tem:name>MITTAPALLI GOWRI SANKAR</tem:name>\r
+      </tem:Hello>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="3ca4d1f1-a39c-4bf9-b7ca-0d164e98d9e7" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/Hello"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

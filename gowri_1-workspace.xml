@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="gowri_1" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="getip">C:/Users/gowrisankar/Documents/getip-soapui-project.xml</con:project>
+  <con:project name="getip">C:/Users/gowrisankar/Documents/getip-soapui-project.xml</con:project>
+  <con:project name="klkl">C:/Users/gowrisankar/Documents/klkl-soapui-project.xml</con:project>
+  <con:project name="getip_address2">C:/Users/gowrisankar/Documents/getip-address2-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>
